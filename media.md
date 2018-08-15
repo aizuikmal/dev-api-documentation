@@ -340,8 +340,12 @@ API Key provided by platform provider.
 true \| false
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="name" type="string" required=false %}
+{% api-method-parameter name="name" type="string" required=true %}
 Folder name.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="parent_id" type="string" required=false %}
+Parent ID.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
